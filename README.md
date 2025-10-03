@@ -31,5 +31,5 @@ addding much more!!
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/java.git
+   git clone https://github.com/nitin864/java.git
    cd java
