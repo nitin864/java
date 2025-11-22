@@ -1,0 +1,36 @@
+Serialization in Java is the process of writing the state of an object to a byte stream. In other words, it is the process by which we can store (or save) the state of an object by converting it to a byte stream.
+
+Once Java object state is converted into byte stream, it can be saved or stored into a hard disk, socket, file, or send over a network. At a later time, we may restore (or retrieve) these object states by using the process of deserialization.
+
+The class whose objects need to be serialized must implement the Serializable interface of java.io package. Then we pass objects to ObjectOutputStream, which is connected to a file, and store objects to a file.
+
+If any one of the objects is not serializable, it will throw an exception named NotSerializableException.
+
+
+
+
+Serializable Interface in Java
+
+A serializable interface is a marker interface that defines no members. It does not have any method also. Since it has no methods, we do not need to add additional code in the class that implements Serializable interface.
+
+Serializable interface is used to mark class objects as serializable so that they can be written into a file. If a class is serializable then all of its subclasses are also serializable.
+
+By default, String class and all the wrapper classes implement Serializable interface.
+
+So, if we want to send the state of an object over a network or file, we must implement Serializable interface.
+
+If serializable interface is not implemented by a class, storing that class objects into a file will generate NotSerializableException
+
+
+
+
+Deserialization in Java
+
+The process of converting byte stream (data) generated through serialization to object is called deserialization in java. In simple words, the reverse operation of serialization is called deserialization.
+
+Once the state of objects is stored in a file, they can be retrieved by reading back objects from the file and used as and when needed.
+
+Both serialization and deserialization process is platform-independent. So, we can serialize an object in a platform and deserialize it in different platforms.
+
+
+
