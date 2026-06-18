@@ -1,7 +1,7 @@
 //polymorphism
 class Husband{
     void role(){
-        System.out.println("Husband is the head of the family");
+        System.out.println("I am also a Husband");
     }
 }
 
